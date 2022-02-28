@@ -7,7 +7,7 @@ int main()
 	switch(fork())
 	{
 	case 0:
-		printf("Daughter process, my PID is: %d\n", getpid());
+		printf("Child process, my PID is: %d\n", getpid());
 		break;
 	default:
 		printf("Parent process, my PID is %d\n", getpid());
